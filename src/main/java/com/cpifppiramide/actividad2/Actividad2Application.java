@@ -11,7 +11,7 @@ import java.util.List;
 @SpringBootApplication
 public class Actividad2Application {
 
-
+	//version 1.0
 	public static void main(String[] args) {
 		SpringApplication.run(Actividad2Application.class, args);
 	}
