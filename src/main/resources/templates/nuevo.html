@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:replace="~{fragments/nav}"></div>
+    <form action="/nuevo" method="post">
+        <input type="text" name="matricula">
+        <input type="text" name="marca">
+        <input type="text" name="modelo">
+        <input type="number" name="km">
+        <button>Guardar</button>
+    </form>
+</body>
+</html>
