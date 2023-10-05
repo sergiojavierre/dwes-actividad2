@@ -3,7 +3,7 @@ package com.cpifppiramide.actividad2.infrastructure;
 import com.cpifppiramide.actividad2.application.CochesUseCases;
 import com.cpifppiramide.actividad2.domain.Coche;
 import com.cpifppiramide.actividad2.domain.CochesRepository;
-import com.cpifppiramide.actividad2.infrastructure.data.CochesRepositoryRAM;
+import com.cpifppiramide.actividad2.infrastructure.data.CochesRepositorySQL;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,7 @@ public class CochesController {
     private CochesUseCases cochesUseCases;
 
     public CochesController(){
-        this.cochesUseCases = new CochesUseCases(new CochesRepositoryRAM());
+        this.cochesUseCases = new CochesUseCases(new CochesRepositorySQL());
     }
 
     @GetMapping("/")
